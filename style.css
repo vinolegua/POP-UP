@@ -1,0 +1,266 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+*:focus:not(:focus-visible){
+    outline:none;
+}
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8333vw;/*на разрешении 1200 0.8333vw === 10px*/
+    font-style: normal;
+    font-weight: normal;
+    -webkit-animation: bugfix infinite 1s;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-style: normal;
+    font-weight: normal;
+    -webkit-animation: bugfix infinite 1s;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    background-color: #C0DBD9;
+}
+input,
+textarea{
+    -webkit-animation: bugfix infinite 1s;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+}
+@-webkit-keyframes bugfix {
+    from {padding: 0;}
+    to {padding: 0;}
+}
+a {
+    color: unset;
+}
+a,
+a:hover {
+    text-decoration: none;
+}
+button,
+input,
+a,
+textarea {
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+}
+button:focus,
+input:focus,
+a:focus,
+textarea:focus {
+    outline: none;
+}
+button:focus,
+input:focus,
+a:focus,
+textarea:focus{
+    outline: none;
+}
+button:active,
+input:active,
+a:active,
+textarea:active {
+    outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font: inherit;
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+img {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+button {
+    border:none;
+    color: inherit;
+    font: inherit;
+    padding: 0;
+    background-color: inherit;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+ul li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.container {
+    width: 117rem;
+    margin: 0 auto;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main {
+    flex: 1 1 auto; /* делает футер зеркальным*/
+}
+
+.header_wrap {
+    display: flex;
+    align-items: center;
+    padding-left: 3rem;
+    min-height: 10rem;
+    background-color: #7FAFF6;
+}
+
+.header_button {
+    padding: .8rem 1.5rem;
+    background-color:
+    #A5C7F9;
+    border-radius: .5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 115%;
+    color:#FFFFFF;
+}
+
+.main_wrap {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.main_hero {
+    display:flex;
+    flex-wrap: wrap; /*резбивает блоки по рядкам*/
+    gap: 1.49rem; /* разделяет болоки между собой */
+    background-color: #B3F95A;
+    margin-bottom: 1.5rem;
+}
+.main_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8AD191;
+    min-height: 19.8rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 5.3rem;
+    line-height: 117%;
+    font-weight: 400;
+    
+    
+}
+
+.regular {
+    width: 39rem;
+}
+.regular:after {
+    content: "1";
+}
+.medium {
+    width: 59rem;
+}
+.medium:after {
+    content: "2";
+}
+.small {
+    width: 16rem;
+}
+.small_one {
+    width: 16rem;
+}
+.small_one:after {
+    content: "5";
+}
+
+.small:after {
+    content: "3";
+}
+
+.large {
+    width: 99.5rem;
+}
+.large:after {
+    content: "4";
+}
+.main_cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    background-color: 
+    #88B5BF;
+    margin-bottom: 10rem;
+}
+.main_card {
+    width:25.5rem;
+    min-height: 19.9rem;
+    background-color: #0D89B0;
+}
+.footer_wrap {
+    min-height: 10rem;
+    background-color: #7FAFF6;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    background: rgba(102, 102, 102, 0.5);
+    display: none;
+}
+.overlay:target {
+    display: flex;
+}
+
+.pop-up {
+    position: relative;
+    width: 40rem;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #FFFFFF;
+    font-weight: 400;
+    font-size: 5.3rem;
+    line-height: 117%;
+
+    color: #000;
+}
+.pop-upclose {
+    width: 4.3rem;
+    height: 3.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background-color: #cdd4df;
+    border-radius: .5rem;
+
+}
